@@ -1,0 +1,131 @@
+@font-face {
+    font-family: gilroy;
+    src: url(../Gilroy-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+body,html {
+    height: 100%;
+    width: 100%;
+    background-color: #042f2e;
+    color: #6ea99f;
+}
+
+nav {
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 8vh;
+}
+
+.logo img {
+    height: 80%;
+    width: 20%;
+    border-radius: 50px;
+}
+
+.nav-right {
+    height: 100%;
+    width: 45%;
+    /* background-color: red; */
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.nav-right a {
+    font-size: 2vh;
+    font-weight: 400;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 1vh;
+    border-radius: 20px;
+    color: #6ea99f;
+    transition: all ease 0.4s;
+}
+
+.nav-right a:hover {
+    border: 1px solid #ffb64b;
+    color: #ffb64b;
+}
+#heading{
+    padding: 6vh 8vh;
+}
+#heading h1{
+    font-size: 6vh;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+}
+.eventContainer{
+    height: 40vh;
+    width: 100%;
+    padding: 0 8vh;
+    /* margin-top: 7vh; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.imgContainer{
+    height: 100%;
+    width: 25vw;
+}
+.imgContainer img{
+    height: 90%;
+    width: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+.imgContainer:hover img{
+    height: 100%;
+    border-radius: 30px;
+}
+
+
+.infoContainer{
+    height: 90%;
+    width: 60vw;
+    padding-top: 2vh;
+    padding-right: 3vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2vh;
+}
+.description{
+    width: 80%;
+}
+.description h2{
+    font-size: 4vh;
+}
+.elem{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.elem p{
+    font-size: 1.8vh;
+    transition: all ease 1s;
+}
+.imgContainer:hover + .infoContainer .elem p{
+    font-size: 2.2vh;
+}
+.description h2{
+    transition: color 1s ease, text-shadow 1.2s ease;
+}
+.imgContainer:hover + .infoContainer .description h2{
+    text-shadow: 0 0 3px #6ea99f;
+}

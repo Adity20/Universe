@@ -1,0 +1,157 @@
+@font-face {
+    font-family: gilroy;
+    src: url(../Gilroy-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+body,html {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 8vh;
+}
+
+.logo img {
+    height: 80%;
+    width: 20%;
+    border-radius: 50px;
+}
+
+.nav-right {
+    height: 100%;
+    width: 45%;
+    /* background-color: red; */
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.nav-right a {
+    font-size: 2vh;
+    font-weight: 400;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 1vh;
+    border-radius: 20px;
+    color: #6ea99f;
+    transition: all ease 0.4s;
+}
+
+.nav-right a:hover {
+    border: 1px solid #ffb64b;
+    color: #ffb64b;
+}
+
+#main {
+    background-color: #042f2e;
+}
+
+#container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4vh 7vh;
+}
+
+.contain-left {
+    height: 80%;
+    width: 40%;
+    color: #6ea99f;
+}
+.contain-left h1{
+    font-size: 15vh;
+    font-weight: 600;
+}
+.contain-left h2{
+    font-size: 7vh;
+    font-weight: 400;
+}
+.contain-left h1:hover, .contain-left h2:hover{
+    color: #ffb64b;
+    text-shadow: 0 0 5px #ffb64b;
+    transition: color 1s ease, text-shadow 1.2s ease;
+}
+
+.contain-right {
+    height: 100%;
+    width: 50%;
+}
+
+.part1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.part2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3vh;
+}
+
+
+.img-holder img {
+    height: 40vh;
+    width: 20vw;
+    object-fit: cover;
+    border-radius: 10px;
+    gap: 2vw;
+    transition: all ease 0.6s;
+    position: absolute;
+    cursor: pointer;
+}
+.overlay{
+    height: 40vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8vh;
+    border-radius: 10px;
+    background: rgba(110, 169, 159, 0.1);
+    color: #6ea99f;
+    box-shadow: 0 0 5px;
+    opacity: 0;
+    transition: all ease 0.8s;
+    cursor: pointer;
+}
+.img-holder:hover .overlay{
+    opacity: 1;
+    margin-bottom: 1vh;
+    height: 42vh;
+    width: 22vw;
+    color: #ffb64b;
+}
+.img-holder:hover img{
+    opacity: 0;
+}
+.text{  
+   color: #6ea99f;
+   transition: all ease 0.6s; 
+}
+.img-holder:hover .text{
+    color: #ffb64b;
+}
+.img-holder:hover img{
+    height: 42vh;
+    width: 22vw;
+}
+.overlay h3{
+    cursor: pointer;
+}

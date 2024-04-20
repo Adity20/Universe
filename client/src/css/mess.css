@@ -1,0 +1,91 @@
+@font-face {
+    font-family: gilroy;
+    src: url(../Gilroy-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+body,html {
+    height: 100%;
+    width: 100%;
+    background-color: #042f2e;
+    color: #6ea99f;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+
+
+.logo img {
+    height: 80%;
+    width: 20%;
+    border-radius: 50px;
+}
+
+
+
+
+#heading{
+    padding: 4vh 8vh;
+}
+
+#menuContainer{
+    margin-top: 8vh;
+    padding: 0 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vh;
+}
+#menuContainer h3{
+    font-size: 3vh;
+    font-weight: 700;
+}
+.elemContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #6ea99f;
+    padding: 1vh;
+    transition: all ease 0.8s;
+}
+.elemContainer:hover{
+    border-radius: 30px;
+    text-shadow: 0 0 1px #6ea99f;
+}
+
+.elem{
+    height: 50vh;
+    width: 22vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;    
+}
+.elemContainer a{
+    text-decoration: none;
+    font-size: 3vh;
+    font-weight: 500;
+    color: #6ea99f;
+    transition: all ease 0.5s;
+}
+.elemContainer a:hover{
+    color: #ffb64b;
+}
+.menu li{
+    margin-top: 1vh;
+    margin-left: 2vh;
+    height: 5vh;
+    width: 100%;
+    font-size: 2vh;
+}
+.menu li:nth-child(1){
+    margin-top: 2vh;
+}

@@ -1,0 +1,110 @@
+@font-face {
+    font-family: gilroy;
+    src: url(../Gilroy-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+body,html {
+    height: 100%;
+    width: 100%;
+    background-color: #042f2e;
+    color: #6ea99f;
+}
+
+nav {
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 8vh;
+}
+
+.logo img {
+    height: 80%;
+    width: 20%;
+    border-radius: 50px;
+}
+
+.nav-right {
+    height: 100%;
+    width: 45%;
+    /* background-color: red; */
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.nav-right a {
+    font-size: 2vh;
+    font-weight: 400;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 1vh;
+    border-radius: 20px;
+    color: #6ea99f;
+    transition: all ease 0.4s;
+}
+
+.nav-right a:hover {
+    border: 1px solid #ffb64b;
+    color: #ffb64b;
+}
+#heading{
+    padding: 4vh 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5vh;
+    margin-bottom: 1vh;
+}
+#heading h1{
+    font-size: 5.5vh;
+    letter-spacing: .2vh;
+    transition: all ease 0.5s;
+}
+#heading:hover h1{
+    color: #48a192;
+    font-size: 5.7vh;
+}
+#container{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8vh;
+}
+.box{
+    height: 100%;
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+    transition: all ease 0.8s;
+}
+.box img{
+    height: 80%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 50px;
+    transition: all ease 0.8s;
+}
+
+.box:hover img{
+    height: 87%;
+    width: 100%;
+    border-radius: 30px;
+}
+.box h4{
+    font-size: 3vh;
+}

@@ -1,0 +1,133 @@
+@font-face {
+    font-family: gilroy;
+    src: url(../Gilroy-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    background-color: #042f2e;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+nav {
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 8vh;
+}
+
+.logo img {
+    height: 80%;
+    width: 20%;
+    border-radius: 50px;
+}
+
+.nav-right {
+    height: 100%;
+    width: 45%;
+    /* background-color: red; */
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.nav-right a {
+    font-size: 2vh;
+    font-weight: 400;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 1vh;
+    border-radius: 20px;
+    color: #6ea99f;
+    transition: all ease 0.4s;
+}
+
+.nav-right a:hover {
+    border: 1px solid #ffb64b;
+    color: #ffb64b;
+}
+#container{
+    height: 100vh;
+    width: 100%;
+    color: #6ea99f;
+    display: flex;
+}
+#contain-left{
+    height: 100vh;
+    width: 50%;
+    padding: 15vh 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3vh
+}
+#contain-left h1{
+    font-size: 5.5vh;
+    font-weight: 700;
+    transition: all ease 1s, text-shadow 1.2s ease;
+}
+#contain-left h2{
+    font-size: 4vh;
+    font-weight: 600;
+    transition: all ease 1s, text-shadow 1.2s ease;
+}
+.names h3{
+    font-size: 3vh;
+    font-weight: 600;
+    transition: all ease 1s;
+}
+#contain-left p{
+    font-size: 2.5vh;
+    font-weight: 400;
+    transition: all ease 1s;
+}
+#contain-left h1:hover{
+    font-size: 6vh;
+    text-shadow: 0 0 5px #6ea99f;
+}
+#contain-left h2:hover{
+    font-size: 4.5vh;
+    text-shadow: 0 0 5px #6ea99f;
+}
+.names h3:hover{
+    font-size: 4vh;
+    color: #ffb64b;
+    text-shadow: 0 0 5px #ffb64b;
+}
+#contain-left p:hover{
+    font-size: 2.6vh;
+    text-shadow: 0 0 5px #6ea99f;
+}
+#contain-right{
+    height: 100vh;
+    width: 50%;
+}
+#contain-right .img{
+    height: 80vh;
+    width: 46vw;
+    margin-left: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img img{
+    height: 50vh;
+    width: 44vw;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: top;
+    transition: all ease 1s;
+}
+
+.img img:hover{
+    height: 55vh;
+    width: 46vw;
+    box-shadow: 7px 10px 10px;
+}
